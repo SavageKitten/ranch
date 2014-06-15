@@ -1,3 +1,4 @@
+console.log("Stallion Barn!");
 function Stallions(name,color,sire,damSire,fee){
     this.name=name;
     this.color=color;
@@ -7,6 +8,7 @@ function Stallions(name,color,sire,damSire,fee){
 }
 Stallions.prototype = {
   info : function() {
+	  console.log("--------------------------------------------");
       console.log(this.name + ": a  " + this.color + " horse by " + this.sire + " out of a mare by " + this.damSire + ". His fee is " + this.fee + "<br />");
       }
 }
